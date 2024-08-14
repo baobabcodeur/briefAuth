@@ -26,7 +26,7 @@ class AuthController extends Controller
         ];
         try {
             if ($this->authInterface->login($data))
-                return redirect()->route('dashboard');
+                return redirect()->route('home');
             else
                 return back()->with('error', 'Email ou mot de passe incorrect(s).');
         } catch (\Exception $ex) {
@@ -46,7 +46,7 @@ class AuthController extends Controller
             $user = $this->authInterface->registration($data);
             Auth::login($user);
 
-            return redirect()->route('dashboard');
+            return redirect()->route('home');
         } catch (\Exception $ex) {
             return back()->with('error', 'une erreur est survnue lors du traitement, Réessayez !');
         }

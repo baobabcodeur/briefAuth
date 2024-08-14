@@ -25,7 +25,7 @@
         <label for="password">Mot de passe</label> <br>
         <input type="password" name="password" id="password" placeholder="Saisir le mot de passe ici ..."> <br> <br>
 
-        <a href="{{ route('registration') }}">S'inscrire</a> <br> <br>
+        <a href="{{ route('register') }}">S'inscrire</a> <br> <br>
 
         <button type="submit">Soumettre</button>
     </form>
