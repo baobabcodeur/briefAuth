@@ -51,4 +51,6 @@ class AuthController extends Controller
             return back()->with('error', 'une erreur est survnue lors du traitement, Réessayez !');
         }
     }
+
+    
 }

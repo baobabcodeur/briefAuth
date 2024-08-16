@@ -74,7 +74,10 @@ h2 {
 .form-container .form:last-child {
     margin-bottom: 0;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 .styled-link {
     display: inline-block;
     padding: 10px 20px;
