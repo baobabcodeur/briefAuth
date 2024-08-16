@@ -23,4 +23,5 @@ class MainController extends Controller
         return redirect()->route('home');
         
     }
+    
 }
